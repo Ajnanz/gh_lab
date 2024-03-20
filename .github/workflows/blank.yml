@@ -3,7 +3,7 @@ on: push
 jobs:
   my-first-job:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       -run: echo"hellow world"
   my-second-job:
     runs-on: ubuntu-latest
