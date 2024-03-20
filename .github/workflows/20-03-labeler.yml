@@ -1,0 +1,16 @@
+name: 20-03-labeler
+on: [pull_request_target]
+jobs:
+    label: 
+ 
+
+      runs-on: ubuntu-latest
+      permissions: 
+        contents: read
+      steps:
+        - run: echo "hello world"
+        - uses: actions/labeler@v4
+    my-second-job:
+      runs-on: ubuntu-latest
+      steps: 
+        - run: echo "Bye world"
