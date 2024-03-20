@@ -1,0 +1,17 @@
+name : 20-03-24-Runners
+on: workflow_dispatch
+jobs:
+  my-first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello runner"
+  my-second-job:
+    runs-on: windows-latest
+    steps:
+      - run: echo "Hello Runner"
+  my-third-job:
+    runs-on: mac-latest
+    steps:
+        - run: echo "Hello Runner"
+      
+  

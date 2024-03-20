@@ -1,7 +1,7 @@
 name : 20-03-24-SimplescheduleEvent
 on: 
     schedule:
-        - cron: '*/5 * * * *'
+        - cron: "*/5 * * * *"
 jobs:
   my-schedule-job:
     runs-on: ubuntu-latest
