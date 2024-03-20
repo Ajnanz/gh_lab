@@ -1,0 +1,14 @@
+name : 20-03-24-SimpleEvent
+on: 
+    schedule:
+        - cron: '*/5 * * * *'
+jobs:
+  my-schedule-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "manual workflow"
+  my-second-sehedule-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Manual workflowgit"
+  
