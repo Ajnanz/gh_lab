@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: echo "Hello Runner"
   my-third-job:
-    runs-on: mac-latest
+    runs-on: macOS-latest
     steps:
         - run: echo "Hello Runner"
       
