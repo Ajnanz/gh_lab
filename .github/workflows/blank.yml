@@ -1,0 +1,12 @@
+name : 20-03-24-Simple Workflow
+on: push
+jobs:
+  my-first-job:
+    runs-on: ubuntu-latest
+    steps:
+      -run: echo"hellow world"
+  my-second-job:
+    runs-on: ubuntu-latest
+    steps:
+      -run: echo "Bye world"
+      
