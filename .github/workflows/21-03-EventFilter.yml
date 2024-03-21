@@ -7,7 +7,7 @@ jobs:
   my-first-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "manual workflow"
+      - run: echo "manual workflow changes"
   my-second-job:
     runs-on: ubuntu-latest
     steps:
