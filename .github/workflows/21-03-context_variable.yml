@@ -1,7 +1,7 @@
 name : 20-03-24-context_variable
 on: workflow_dispatch
 env:
-    localenvvar:${{vars.test.TESTDBCS}}     
+    localenvvar: ${{vars.test.TESTDBCS}}     
 jobs:
     my-first-job:
       runs-on: ubuntu-latest
