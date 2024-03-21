@@ -24,4 +24,4 @@ jobs:
             echo "Sha : ${{github.sha}}"
             echo "Local env : ${{env.MY_STEP_VAR}}"
         - name: Display Event information
-          run: echo "env :${{env.MY_VAR_1}}
+          run: echo "env :${{env.MY_VAR_1}}"
