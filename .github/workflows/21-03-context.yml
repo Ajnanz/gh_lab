@@ -3,6 +3,7 @@ on: workflow_dispatch
 inputs:
     myinputs:
         type: string
+        #default :amarjit
         
 env:
     MY_VAR_1:value1
