@@ -1,13 +1,21 @@
 name : 20-03-24-context
 on: workflow_dispatch
+env:
+    MY_VAR_1:value1
+    MY_VAR_2:value2
 jobs:
     my-first-job:
       runs-on: ubuntu-latest
       steps:
         - name: test
+          env:
+              MY_STEP_VAR: my step var
           run: |
             echo "Github Event name :${{github.event_name}}"
             echo "ref :${{github}}"
             echo "Run Number : ${{github.run_number}}"
             echo "Run Id : ${{github.run_id}}"
             echo "Sha : ${{github.sha}}"
+            echo "Local env : ${{env.MY_STEP_VAR}}"
+        - name: Display Event information
+          run: echo "env :${{env.MY_VAR_1}}"
