@@ -12,6 +12,11 @@ jobs:
           distribution: 'temurin'
           java-version: 21
       - name: build
-        run: mvn install    
+        run: mvn install   
+      - name: artifact-upload
+        uses: actions/uploadartifact-@v4   
+        with:
+          name : todo-artifact
+          path: /target
 
       
