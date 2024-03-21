@@ -1,9 +1,6 @@
 name : 20-03-24-context_output
-on: workflow_dispatch:
-        inputs:
-            myinputs:
-                type: string
-                #default :amarjit
+on: workflow_dispatch
+
 jobs:
     my-first-job:
       runs-on: ubuntu-latest
