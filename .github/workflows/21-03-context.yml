@@ -1,5 +1,9 @@
 name : 20-03-24-context
 on: workflow_dispatch
+inputs:
+    myinputs:
+        type: string
+        
 env:
     MY_VAR_1:value1
     MY_VAR_2:value2
@@ -18,4 +22,4 @@ jobs:
             echo "Sha : ${{github.sha}}"
             echo "Local env : ${{env.MY_STEP_VAR}}"
         - name: Display Event information
-          run: echo "env :${{env.MY_VAR_1}}"
+          run: echo "env :${{env.MY_VAR_1}}
