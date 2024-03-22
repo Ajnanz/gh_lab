@@ -3,10 +3,15 @@ on: workflow_dispatch
 jobs:
   my-first-job:
     runs-on: ubuntu-latest
+    
     steps:
-      - run: |
-         chmod +x ../../init.sh
-         ../../init.sh
+      - name: "checkout repo"
+        uses: actions/checkout@v4
+        # spare checkout 
+      - name: "my step"
+        run: |
+         chmod +x ./init.sh
+         ./init.sh
 
   my-second-job:
     runs-on: ubuntu-latest
