@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-         chmod +x ./init.sh
+         chmod +x ../../init.sh
          ./init.sh
 
   my-second-job:
