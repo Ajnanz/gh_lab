@@ -1,4 +1,4 @@
-name: 23-03-k8s
+name: 22-03-k8s
 
 on:
   workflow_dispatch:
