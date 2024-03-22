@@ -1,22 +1,20 @@
-name : 21-03-24-Artifacts
+name: 11-01-artifact
 on: workflow_dispatch
 jobs:
- app:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: setup java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: 21
-      - name: build
-        run: mvn install   
-      - name: artifact-upload
-        uses: actions/uploadartifact-@v4   
-        with:
-          name : todo-artifact
-          path: /target
-
-      
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout 
+          uses: actions/checkout@v4
+        - name: setup java 
+          uses: actions/setup-java@v4
+          with:
+            distribution: 'temurin' # See 'Supported distributions' for available options
+            java-version: '21'
+        - name: buid 
+          run: mvn install
+        - name: artifact-upload
+          uses: actions/upload-artifact@v4
+          with:
+            name: todo-artifact
+            path: target/
